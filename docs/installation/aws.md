@@ -1,13 +1,13 @@
-# Run BaGet on AWS
+# Run Goulash on AWS
 
 !!! warning
     This page is a work in progress!
 
-Use Amazon Web Services to scale BaGet. You can store metadata on [Amazon RDS](https://aws.amazon.com/rds/postgresql/) and upload packages to [Amazon S3](https://aws.amazon.com/s3/).
+Use Amazon Web Services to scale Goulash. You can store metadata on [Amazon RDS](https://aws.amazon.com/rds/postgresql/) and upload packages to [Amazon S3](https://aws.amazon.com/s3/).
 
-## Configure BaGet
+## Configure Goulash
 
-You can modify BaGet's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [BaGet's configuration](../configuration.md) guide.
+You can modify Goulash's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [Goulash's configuration](../configuration.md) guide.
 
 ### Amazon S3
 

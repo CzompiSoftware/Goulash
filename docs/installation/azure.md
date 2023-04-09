@@ -1,9 +1,9 @@
-# Run BaGet on Azure
+# Run Goulash on Azure
 
 !!! warning
     This page is a work in progress!
 
-Use Azure to scale BaGet. You can store metadata on [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/), upload packages to [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/), and provide powerful search using [Azure Search](https://azure.microsoft.com/en-us/services/search/).
+Use Azure to scale Goulash. You can store metadata on [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/), upload packages to [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/), and provide powerful search using [Azure Search](https://azure.microsoft.com/en-us/services/search/).
 
 ## TODO
 
@@ -11,9 +11,9 @@ Use Azure to scale BaGet. You can store metadata on [Azure SQL Database](https:/
 * Table Storage
 * High availability setup
 
-## Configure BaGet
+## Configure Goulash
 
-You can modify BaGet's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [BaGet's configuration](../configuration.md) guide.
+You can modify Goulash's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [Goulash's configuration](../configuration.md) guide.
 
 ### Azure SQL database
 

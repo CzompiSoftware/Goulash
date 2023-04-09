@@ -1,13 +1,13 @@
-# BaGet SDK
+# Goulash SDK
 
-You can use BaGet's [`BaGet.Protocol`](https://www.nuget.org/packages/BaGet.Protocol) package to interact with a NuGet server.
+You can use Goulash's [`Goulash.Protocol`](https://www.nuget.org/packages/Goulash.Protocol) package to interact with a NuGet server.
 
 ## Getting Started
 
-Install the [`BaGet.Protocol`](https://www.nuget.org/packages/BaGet.Protocol) package:
+Install the [`Goulash.Protocol`](https://www.nuget.org/packages/Goulash.Protocol) package:
 
 ```
-dotnet add package BaGet.Protocol
+dotnet add package Goulash.Protocol
 ```
 
 ## List Package Versions

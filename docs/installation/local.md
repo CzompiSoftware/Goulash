@@ -1,15 +1,15 @@
-# Run BaGet on your Computer
+# Run Goulash on your Computer
 
-## Run BaGet
+## Run Goulash
 
 1. Install the [.NET Core SDK](https://www.microsoft.com/net/download)
-1. Download and extract [BaGet's latest release](https://github.com/loic-sharma/BaGet/releases)
-1. Start the service with `dotnet BaGet.dll`
+1. Download and extract [Goulash's latest release](https://github.com/loic-sharma/Goulash/releases)
+1. Start the service with `dotnet Goulash.dll`
 1. Browse `http://localhost:5000/` in your browser
 
-## Configure BaGet
+## Configure Goulash
 
-You can modify BaGet's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [BaGet's configuration](../configuration.md) guide.
+You can modify Goulash's configurations by editing the `appsettings.json` file. For the full list of configurations, please refer to [Goulash's configuration](../configuration.md) guide.
 
 ## Publish packages
 

@@ -1,4 +1,4 @@
-# Debugging BaGet
+# Debugging Goulash
 
 !!! warning
     This page is a work in progress!

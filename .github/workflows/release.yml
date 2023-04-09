@@ -32,7 +32,7 @@ jobs:
 
   release_zip:
     needs: verify
-    name: Release BaGet.zip to GitHub
+    name: Release Goulash.zip to GitHub
     runs-on: ubuntu-latest
 
     steps:
@@ -42,11 +42,11 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Publish
-      run: dotnet publish src/BaGet --configuration Release --output artifacts
+      run: dotnet publish src/Goulash --configuration Release --output artifacts
     - name: Upload
       uses: actions/upload-artifact@v2
       with:
-        name: BaGet
+        name: Goulash
         path: artifacts
 
   release_packages:
