@@ -96,9 +96,9 @@ namespace Goulash
 
             app.UseEndpoints(endpoints =>
             {
-                var baget = new GoulashEndpointBuilder();
+                var goulash = new GoulashEndpointBuilder();
 
-                baget.MapEndpoints(endpoints);
+                goulash.MapEndpoints(endpoints);
             });
         }
     }

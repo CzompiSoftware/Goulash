@@ -41,7 +41,7 @@ Ensure that the configuration's storage `Path` has the appropriate forward slash
 ...
 ```
 
-Note that you will need to adjust folder permissions if the `Path` is created outside of the Goulash top-level directory. See the [Goulash Folder Permissions](#baget-folder-permissions).
+Note that you will need to adjust folder permissions if the `Path` is created outside of the Goulash top-level directory. See the [Goulash Folder Permissions](#goulash-folder-permissions).
 
 
 ## IIS server options
