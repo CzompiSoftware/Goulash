@@ -1,8 +1,8 @@
-# Run BaGet on Docker
+# Run Goulash on Docker
 
-## Configure BaGet
+## Configure Goulash
 
-Create a file named `baget.env` to store BaGet's configurations:
+Create a file named `baget.env` to store Goulash's configurations:
 
 ```
 # The following config is the API Key used to publish packages.
@@ -16,23 +16,23 @@ Database__ConnectionString=Data Source=/var/baget/baget.db
 Search__Type=Database
 ```
 
-For a full list of configurations, please refer to [BaGet's configuration](../configuration.md) guide.
+For a full list of configurations, please refer to [Goulash's configuration](../configuration.md) guide.
 
 !!! info
-    The `baget.env` file stores [BaGet's configuration](configuration) as environment
+    The `baget.env` file stores [Goulash's configuration](configuration) as environment
     variables. To learn how these configurations work, please refer to
     [ASP.NET Core's configuration documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1&tabs=basicconfiguration#configuration-by-environment).
 
-## Run BaGet
+## Run Goulash
 
-1. Create a folder named `baget-data` in the same directory as the `baget.env` file. This will be used by BaGet to persist its state.
-2. Pull BaGet's latest [docker image](https://hub.docker.com/r/loicsharma/baget):
+1. Create a folder named `baget-data` in the same directory as the `baget.env` file. This will be used by Goulash to persist its state.
+2. Pull Goulash's latest [docker image](https://hub.docker.com/r/loicsharma/baget):
 
 ```
 docker pull loicsharma/baget
 ```
 
-You can now run BaGet:
+You can now run Goulash:
 
 ```
 docker run --rm --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
@@ -53,7 +53,7 @@ dotnet nuget push -s http://localhost:5555/v3/index.json -k NUGET-SERVER-API-KEY
 ```
 
 !!! warning
-    The default API Key to publish packages is `NUGET-SERVER-API-KEY`. You should change this to a secret value to secure your server. See [Configure BaGet](#configure-baget).
+    The default API Key to publish packages is `NUGET-SERVER-API-KEY`. You should change this to a secret value to secure your server. See [Configure Goulash](#configure-baget).
 
 ## Browse packages
 

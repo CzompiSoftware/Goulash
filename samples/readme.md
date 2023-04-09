@@ -1,6 +1,6 @@
 # Samples
 
-Here you can find samples that show you how to use BaGet in your own projects:
+Here you can find samples that show you how to use Goulash in your own projects:
 
-* `BaGetWebApplication` - Embed BaGet into your own ASP.NET Core project
-* `BaGet.Protocol.Samples.Tests` - Interact with a NuGet V3 API
+* `GoulashWebApplication` - Embed Goulash into your own ASP.NET Core project
+* `Goulash.Protocol.Samples.Tests` - Interact with a NuGet V3 API

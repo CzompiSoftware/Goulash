@@ -9,7 +9,7 @@
     * Strong support for Paket
     * Only supports NuGet's v2 APIs (missing verified packages, signed packages, etc...)
     * Stores all packages' metadata using a single JSON file
-* BaGet
+* Goulash
     * Supports NuGet's v3 APIs
     * Stores packages' metadata in a database
     * Capable of ingesting all packages on nuget.org

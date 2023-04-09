@@ -1,4 +1,4 @@
-# BaGet :baguette_bread:
+# Goulash :baguette_bread:
 
 ![Build status] [![Discord][Discord image]][Discord link] [![Twitter][Twitter image]][Twitter link]
 
@@ -11,8 +11,8 @@ A lightweight [NuGet] and [symbol] server.
 ## Getting Started
 
 1. Install the [.NET SDK]
-2. Download and extract [BaGet's latest release]
-3. Start the service with `dotnet BaGet.dll`
+2. Download and extract [Goulash's latest release]
+3. Start the service with `dotnet Goulash.dll`
 4. Browse `http://localhost:5000/` in your browser
 
 For more information, please refer to the [documentation].
@@ -25,7 +25,7 @@ For more information, please refer to the [documentation].
 
 Stay tuned, more features are planned!
 
-[Build status]: https://img.shields.io/github/actions/workflow/status/loic-sharma/BaGet/.github/workflows/main.yml
+[Build status]: https://img.shields.io/github/actions/workflow/status/loic-sharma/Goulash/.github/workflows/main.yml
 [Discord image]: https://img.shields.io/discord/889377258068930591
 [Discord link]: https://discord.gg/MWbhpf66mk
 [Twitter image]: https://img.shields.io/twitter/follow/bagetapp?label=Follow
@@ -36,13 +36,13 @@ Stay tuned, more features are planned!
 [.NET SDK]: https://www.microsoft.com/net/download
 [Node.js]: https://nodejs.org/
 
-[BaGet's latest release]: https://github.com/loic-sharma/BaGet/releases
+[Goulash's latest release]: https://github.com/loic-sharma/Goulash/releases
 
-[Documentation]: https://loic-sharma.github.io/BaGet/
-[Docker]: https://loic-sharma.github.io/BaGet/installation/docker/
-[Azure]: https://loic-sharma.github.io/BaGet/installation/azure/
-[AWS]: https://loic-sharma.github.io/BaGet/installation/aws/
-[Google Cloud]: https://loic-sharma.github.io/BaGet/installation/gcp/
-[Alibaba Cloud]: https://loic-sharma.github.io/BaGet/installation/aliyun/
+[Documentation]: https://loic-sharma.github.io/Goulash/
+[Docker]: https://loic-sharma.github.io/Goulash/installation/docker/
+[Azure]: https://loic-sharma.github.io/Goulash/installation/azure/
+[AWS]: https://loic-sharma.github.io/Goulash/installation/aws/
+[Google Cloud]: https://loic-sharma.github.io/Goulash/installation/gcp/
+[Alibaba Cloud]: https://loic-sharma.github.io/Goulash/installation/aliyun/
 
-[Mirror a NuGet server]: https://loic-sharma.github.io/BaGet/configuration/#enable-read-through-caching
+[Mirror a NuGet server]: https://loic-sharma.github.io/Goulash/configuration/#enable-read-through-caching

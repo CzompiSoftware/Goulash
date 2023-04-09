@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+
+    <PackageTags>NuGet;Amazon;Cloud</PackageTags>
+    <Description>The libraries to host Goulash on AWS.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.110.20" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.3.104.27" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Goulash.Core\Goulash.Core.csproj" />
+  </ItemGroup>
+
+</Project>

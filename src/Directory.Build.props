@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Authors>Loic Sharma</Authors>
     <Copyright>Copyright (c) Loic Sharma 2021</Copyright>
-    <Product>BaGet</Product>
+    <Product>Goulash</Product>
 
     <PackageIcon>packageIcon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageVersion Condition="'$(PackageVersion)' == ''">0.1.0-prerelease</PackageVersion>
-    <PackageProjectUrl>https://loic-sharma.github.io/BaGet/</PackageProjectUrl>
+    <PackageProjectUrl>https://loic-sharma.github.io/Goulash/</PackageProjectUrl>
   </PropertyGroup>
 
   <!-- Compiler properties -->
