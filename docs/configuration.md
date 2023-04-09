@@ -118,7 +118,7 @@ The database settings are located under the `Database` key in the `appsettings.j
 
     "Database": {
         "Type": "Sqlite",
-        "ConnectionString": "Data Source=baget.db"
+        "ConnectionString": "Data Source=goulash.db"
     },
 
     ...

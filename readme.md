@@ -28,8 +28,8 @@ Stay tuned, more features are planned!
 [Build status]: https://img.shields.io/github/actions/workflow/status/loic-sharma/Goulash/.github/workflows/main.yml
 [Discord image]: https://img.shields.io/discord/889377258068930591
 [Discord link]: https://discord.gg/MWbhpf66mk
-[Twitter image]: https://img.shields.io/twitter/follow/bagetapp?label=Follow
-[Twitter link]: https://twitter.com/bagetapp
+[Twitter image]: https://img.shields.io/twitter/follow/goulashapp?label=Follow
+[Twitter link]: https://twitter.com/goulashapp
 
 [NuGet]: https://learn.microsoft.com/nuget/what-is-nuget
 [symbol]: https://docs.microsoft.com/en-us/windows/desktop/debug/symbol-servers-and-symbol-stores
