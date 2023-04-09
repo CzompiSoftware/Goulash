@@ -22,7 +22,7 @@ namespace Goulash
 
             var app = new CommandLineApplication
             {
-                Name = "baget",
+                Name = "goulash",
                 Description = "A light-weight NuGet service",
             };
 

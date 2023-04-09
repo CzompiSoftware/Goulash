@@ -20,7 +20,7 @@ Update the `appsettings.json` file:
         "Bucket": "foo",
         "AccessKey": "",
         "AccessKeySecret": "",
-        "Prefix": "lib/baget" // optional
+        "Prefix": "lib/goulash" // optional
     },
 
     ...

@@ -31,9 +31,9 @@ namespace GoulashWebApplication
             app.UseEndpoints(endpoints =>
             {
                 // Add Goulash's endpoints.
-                var baget = new GoulashEndpointBuilder();
+                var goulash = new GoulashEndpointBuilder();
 
-                baget.MapEndpoints(endpoints);
+                goulash.MapEndpoints(endpoints);
             });
         }
     }

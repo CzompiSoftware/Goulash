@@ -8,7 +8,7 @@ namespace Goulash.Azure
     /// </summary>
     public static class ExactMatchCustomAnalyzer
     {
-        public const string Name = "baget-exact-match-analyzer";
+        public const string Name = "goulash-exact-match-analyzer";
 
         public static CustomAnalyzer Instance = new CustomAnalyzer(
             Name,

@@ -2,7 +2,7 @@
 
 ## Configure Goulash
 
-Create a file named `baget.env` to store Goulash's configurations:
+Create a file named `goulash.env` to store Goulash's configurations:
 
 ```
 # The following config is the API Key used to publish packages.
@@ -10,32 +10,32 @@ Create a file named `baget.env` to store Goulash's configurations:
 ApiKey=NUGET-SERVER-API-KEY
 
 Storage__Type=FileSystem
-Storage__Path=/var/baget/packages
+Storage__Path=/var/goulash/packages
 Database__Type=Sqlite
-Database__ConnectionString=Data Source=/var/baget/baget.db
+Database__ConnectionString=Data Source=/var/goulash/goulash.db
 Search__Type=Database
 ```
 
 For a full list of configurations, please refer to [Goulash's configuration](../configuration.md) guide.
 
 !!! info
-    The `baget.env` file stores [Goulash's configuration](configuration) as environment
+    The `goulash.env` file stores [Goulash's configuration](configuration) as environment
     variables. To learn how these configurations work, please refer to
     [ASP.NET Core's configuration documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1&tabs=basicconfiguration#configuration-by-environment).
 
 ## Run Goulash
 
-1. Create a folder named `baget-data` in the same directory as the `baget.env` file. This will be used by Goulash to persist its state.
-2. Pull Goulash's latest [docker image](https://hub.docker.com/r/loicsharma/baget):
+1. Create a folder named `goulash-data` in the same directory as the `goulash.env` file. This will be used by Goulash to persist its state.
+2. Pull Goulash's latest [docker image](https://hub.docker.com/r/loicsharma/goulash):
 
 ```
-docker pull loicsharma/baget
+docker pull loicsharma/goulash
 ```
 
 You can now run Goulash:
 
 ```
-docker run --rm --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
+docker run --rm --name nuget-server -p 5555:80 --env-file goulash.env -v "$(pwd)/goulash-data:/var/goulash" loicsharma/goulash:latest
 ```
 
 ## Publish packages
@@ -53,7 +53,7 @@ dotnet nuget push -s http://localhost:5555/v3/index.json -k NUGET-SERVER-API-KEY
 ```
 
 !!! warning
-    The default API Key to publish packages is `NUGET-SERVER-API-KEY`. You should change this to a secret value to secure your server. See [Configure Goulash](#configure-baget).
+    The default API Key to publish packages is `NUGET-SERVER-API-KEY`. You should change this to a secret value to secure your server. See [Configure Goulash](#configure-goulash).
 
 ## Browse packages
 

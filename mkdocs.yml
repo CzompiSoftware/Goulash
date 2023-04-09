@@ -23,7 +23,7 @@ extra:
     - type: github-alt
       link: https://github.com/loic-sharma
     - type: twitter
-      link: https://twitter.com/bagetapp
+      link: https://twitter.com/goulashapp
 
 markdown_extensions:
   - markdown.extensions.admonition
