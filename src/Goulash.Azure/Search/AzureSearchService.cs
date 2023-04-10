@@ -80,7 +80,7 @@ namespace Goulash.Azure
 
                 results.Add(new SearchResult
                 {
-                    PackageId =  document.Id,
+                    PackageId = document.Id,
                     Version = document.Version,
                     Description = document.Description,
                     Authors = document.Authors,

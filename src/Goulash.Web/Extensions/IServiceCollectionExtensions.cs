@@ -4,32 +4,31 @@ using Goulash.Web;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Goulash
+namespace Goulash;
+
+public static class IServiceCollectionExtensions
 {
-    public static class IServiceCollectionExtensions
+    public static IServiceCollection AddGoulashWebApplication(
+        this IServiceCollection services,
+        Action<GoulashApplication> configureAction)
     {
-        public static IServiceCollection AddGoulashWebApplication(
-            this IServiceCollection services,
-            Action<GoulashApplication> configureAction)
-        {
-            services
-                .AddRouting(options => options.LowercaseUrls = true)
-                .AddControllers()
-                .AddApplicationPart(typeof(PackageContentController).Assembly)
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-                .AddJsonOptions(options =>
-                {
-                    options.JsonSerializerOptions.IgnoreNullValues = true;
-                });
+        services
+            .AddRouting(options => options.LowercaseUrls = true)
+            .AddControllers()
+            .AddApplicationPart(typeof(PackageContentController).Assembly)
+            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.IgnoreNullValues = true;
+            });
 
-            services.AddRazorPages();
+        services.AddRazorPages();
 
-            services.AddHttpContextAccessor();
-            services.AddTransient<IUrlGenerator, GoulashUrlGenerator>();
+        services.AddHttpContextAccessor();
+        services.AddTransient<IUrlGenerator, GoulashUrlGenerator>();
 
-            services.AddGoulashApplication(configureAction);
+        services.AddGoulashApplication(configureAction);
 
-            return services;
-        }
+        return services;
     }
 }

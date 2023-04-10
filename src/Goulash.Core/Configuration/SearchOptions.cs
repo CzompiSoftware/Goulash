@@ -1,7 +1,6 @@
-namespace Goulash.Core
+namespace Goulash.Core;
+
+public class SearchOptions
 {
-    public class SearchOptions
-    {
-        public string Type { get; set; }
-    }
+    public string Type { get; set; }
 }

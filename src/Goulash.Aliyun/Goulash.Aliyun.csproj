@@ -3,6 +3,7 @@
     <PackageTags>NuGet;Alibaba;Cloud</PackageTags>
     <Description>The libraries to host Goulash on Alibaba Cloud (Aliyun).</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>11.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

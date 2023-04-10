@@ -1,15 +1,14 @@
 using System;
 using Microsoft.AspNetCore.Builder;
 
-namespace Goulash.Web
-{
-    public static class IApplicationBuilderExtensions
-    {
-        public static IApplicationBuilder UseOperationCancelledMiddleware(this IApplicationBuilder app)
-        {
-            if (app == null) throw new ArgumentNullException(nameof(app));
+namespace Goulash.Web;
 
-            return app.UseMiddleware<OperationCancelledMiddleware>();
-        }
+public static class IApplicationBuilderExtensions
+{
+    public static IApplicationBuilder UseOperationCancelledMiddleware(this IApplicationBuilder app)
+    {
+        if (app == null) throw new ArgumentNullException(nameof(app));
+
+        return app.UseMiddleware<OperationCancelledMiddleware>();
     }
 }
