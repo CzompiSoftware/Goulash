@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29104.9
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33513.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goulash", "src\Goulash\Goulash.csproj", "{284366CB-C68F-473E-908A-50A382616AE0}"
 EndProject
@@ -50,7 +50,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goulash.Aliyun", "src\Goula
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoulashWebApplication", "samples\GoulashWebApplication\GoulashWebApplication.csproj", "{E5AFE55D-0932-46A9-BFA3-C8A034037377}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goulash.Web.Tests", "tests\Goulash.Web.Tests\Goulash.Web.Tests.csproj", "{BEEAAA73-36CD-4178-9C9F-6D036586E7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goulash.Web.Tests", "tests\Goulash.Web.Tests\Goulash.Web.Tests.csproj", "{BEEAAA73-36CD-4178-9C9F-6D036586E7BF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C5B65647-2833-47DC-AB13-D146B86F340B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +132,10 @@ Global
 		{BEEAAA73-36CD-4178-9C9F-6D036586E7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEEAAA73-36CD-4178-9C9F-6D036586E7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEEAAA73-36CD-4178-9C9F-6D036586E7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B65647-2833-47DC-AB13-D146B86F340B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B65647-2833-47DC-AB13-D146B86F340B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B65647-2833-47DC-AB13-D146B86F340B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B65647-2833-47DC-AB13-D146B86F340B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

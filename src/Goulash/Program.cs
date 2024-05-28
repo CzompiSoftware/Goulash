@@ -12,7 +12,7 @@ namespace Goulash;
 
 public class Program
 {
-    public static async Task Main(string[] args)
+    public static void Main(string[] args)
     {
         var host = CreateHostBuilder(args).Build();
         if (!host.ValidateStartupOptions())
@@ -34,12 +34,11 @@ public class Program
             {
                 downloads.OnExecuteAsync(async cancellationToken =>
                 {
-                    using (var scope = host.Services.CreateScope())
-                    {
-                        var importer = scope.ServiceProvider.GetRequiredService<DownloadsImporter>();
+                    using var scope = host.Services.CreateScope();
 
-                        await importer.ImportAsync(cancellationToken);
-                    }
+                    var importer = scope.ServiceProvider.GetRequiredService<DownloadsImporter>();
+
+                    await importer.ImportAsync(cancellationToken);
                 });
             });
         });
@@ -52,7 +51,7 @@ public class Program
             await host.RunAsync(cancellationToken);
         });
 
-        await app.ExecuteAsync(args);
+        app.Execute(args);
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args)

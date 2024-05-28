@@ -26,7 +26,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.x
+        dotnet-version: 8.0.x
     - name: Test
       run: dotnet test --verbosity normal
 
@@ -40,7 +40,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.x
+        dotnet-version: 8.0.x
     - name: Publish
       run: dotnet publish src/Goulash --configuration Release --output artifacts
     - name: Upload
@@ -59,7 +59,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.x
+        dotnet-version: 8.0.x
     - name: Pack
       run: dotnet pack --configuration Release --output artifacts
     - name: Push
@@ -86,5 +86,5 @@ jobs:
         context: .
         push: true
         tags: |
-          cr.czompi.cloud/czsoft/goulash:latest
-          cr.czompi.cloud/czsoft/goulash:${{ github.event.inputs.releaseVersion }}
+          cr.czompicloud.hu/czsoft/goulash:latest
+          cr.czompicloud.hu/czsoft/goulash:${{ github.event.inputs.releaseVersion }}

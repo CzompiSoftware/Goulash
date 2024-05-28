@@ -272,3 +272,4 @@ __pycache__/
 **/goulash.db
 **/goulash.db-shm
 **/goulash.db-wal
+docker-compose.override.yml

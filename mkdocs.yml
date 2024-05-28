@@ -1,12 +1,12 @@
 site_name: Goulash
 site_description: A lightweight NuGet and symbol server
-site_author: Loic Sharma
-site_url: https://loic-sharma.github.io/Goulash/
+site_author: Czompi Software
+site_url: https://docs.czsoft.hu/project/goulash/
 
-repo_name: loic-sharma/Goulash
-repo_url: https://github.com/loic-sharma/Goulash
+repo_name: czompisoftware/goulash
+repo_url: https://github.com/czompisoftware/Goulash
 
-copyright: 'Copyright &copy; 2020 Loic Sharma'
+copyright: 'Copyright &copy; 2024 Czompi Software'
 
 theme:
   name: material
@@ -15,15 +15,13 @@ theme:
     primary: yellow
     accent: yellow
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Comfortaa
+    code: Cascadia Code
 
 extra:
   social:
     - type: github-alt
-      link: https://github.com/loic-sharma
-    - type: twitter
-      link: https://twitter.com/goulashapp
+      link: https://github.com/czompisoftware
 
 markdown_extensions:
   - markdown.extensions.admonition

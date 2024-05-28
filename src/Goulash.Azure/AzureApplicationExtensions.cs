@@ -1,19 +1,19 @@
 using System;
 using Goulash.Azure;
 using Goulash.Core;
-using Microsoft.Azure.Cosmos.Table;
-using Microsoft.Azure.Search;
+using Azure.Data.Tables;
+using Azure.Search.Documents;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
-using Microsoft.WindowsAzure.Storage.Blob;
+using Azure.Storage.Blobs;
 
 namespace Goulash
 {
-    using CloudStorageAccount = Microsoft.WindowsAzure.Storage.CloudStorageAccount;
+    using CloudStorageAccount = CloudStorageAccount;
     using StorageCredentials = Microsoft.WindowsAzure.Storage.Auth.StorageCredentials;
 
-    using TableStorageAccount = Microsoft.Azure.Cosmos.Table.CloudStorageAccount;
+    using TableStorageAccount = CloudStorageAccount;
 
     public static class AzureApplicationExtensions
     {

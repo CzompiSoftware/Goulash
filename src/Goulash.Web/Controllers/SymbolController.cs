@@ -16,12 +16,7 @@ public class SymbolController : Controller
     private readonly IOptionsSnapshot<GoulashOptions> _options;
     private readonly ILogger<SymbolController> _logger;
 
-    public SymbolController(
-        IAuthenticationService authentication,
-        ISymbolIndexingService indexer,
-        ISymbolStorageService storage,
-        IOptionsSnapshot<GoulashOptions> options,
-        ILogger<SymbolController> logger)
+    public SymbolController(IAuthenticationService authentication, ISymbolIndexingService indexer, ISymbolStorageService storage, IOptionsSnapshot<GoulashOptions> options, ILogger<SymbolController> logger)
     {
         _authentication = authentication ?? throw new ArgumentNullException(nameof(authentication));
         _indexer = indexer ?? throw new ArgumentNullException(nameof(indexer));
